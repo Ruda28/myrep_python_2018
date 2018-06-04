@@ -1,6 +1,9 @@
-dane = int(input('podaj liczbe: '))
-
-if dane % 2:
-    print('nieparzysta')
+dane = input('podaj liczbe: ')
+if dane.isdigit():
+    dane=int(dane)
+    if dane % 2:
+        print('nieparzysta')
+    else:
+        print('parzysta')
 else:
-    print('parzysta')
+    print('musisz podac liczbe')
